@@ -11,7 +11,8 @@
     "step": "build"
    }
   ],
-  "startCommand": "bash start.sh"
+  "startCommand": "bash start.sh",
+  "user": "1000:1000"
  },
  "steps": [
   {

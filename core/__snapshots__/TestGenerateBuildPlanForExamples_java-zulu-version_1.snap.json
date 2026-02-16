@@ -27,7 +27,8 @@
     "step": "build"
    }
   ],
-  "startCommand": "java  $JAVA_OPTS -jar target/*jar"
+  "startCommand": "java  $JAVA_OPTS -jar target/*jar",
+  "user": "1000:1000"
  },
  "steps": [
   {

@@ -38,6 +38,7 @@
    }
   ],
   "startCommand": "RACK_ENV=production bundle exec puma",
+  "user": "1000:1000",
   "variables": {
    "BUNDLE_GEMFILE": "/app/Gemfile",
    "GEM_HOME": "/usr/local/bundle",

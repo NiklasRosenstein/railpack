@@ -12,6 +12,7 @@
    }
   ],
   "startCommand": "/app/_build/prod/rel/friends/bin/friends start",
+  "user": "1000:1000",
   "variables": {
    "ELIXIR_ERL_OPTIONS": "+fnu",
    "LANG": "en_US.UTF-8",

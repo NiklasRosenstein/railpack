@@ -46,7 +46,8 @@
     "step": "build"
    }
   ],
-  "startCommand": "/start-container.sh"
+  "startCommand": "/start-container.sh",
+  "user": "1000:1000"
  },
  "steps": [
   {

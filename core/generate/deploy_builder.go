@@ -11,6 +11,7 @@ type DeployBuilder struct {
 	Variables    map[string]string
 	Paths        []string
 	AptPackages  []string
+	User         string
 }
 
 func NewDeployBuilder() *DeployBuilder {
@@ -21,6 +22,7 @@ func NewDeployBuilder() *DeployBuilder {
 		Variables:    map[string]string{},
 		Paths:        []string{},
 		AptPackages:  []string{},
+		User:         plan.DefaultUser,
 	}
 }
 
@@ -72,4 +74,5 @@ func (b *DeployBuilder) Build(p *plan.BuildPlan, options *BuildStepOptions) {
 	p.Deploy.StartCmd = b.StartCmd
 	p.Deploy.Variables = b.Variables
 	p.Deploy.Paths = b.Paths
+	p.Deploy.User = b.User
 }
