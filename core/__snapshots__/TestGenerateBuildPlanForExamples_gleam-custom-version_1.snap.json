@@ -21,7 +21,8 @@
     "step": "build"
    }
   ],
-  "startCommand": "./build/erlang-shipment/entrypoint.sh run"
+  "startCommand": "./build/erlang-shipment/entrypoint.sh run",
+  "user": "1000:1000"
  },
  "steps": [
   {

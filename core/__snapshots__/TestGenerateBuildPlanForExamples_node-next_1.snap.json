@@ -55,6 +55,7 @@
    }
   ],
   "startCommand": "npm run start",
+  "user": "1000:1000",
   "variables": {
    "CI": "true",
    "NODE_ENV": "production",

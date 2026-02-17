@@ -11,7 +11,8 @@
     "step": "build"
    }
   ],
-  "startCommand": "/build/cpp-meson"
+  "startCommand": "/build/cpp-meson",
+  "user": "1000:1000"
  },
  "steps": [
   {

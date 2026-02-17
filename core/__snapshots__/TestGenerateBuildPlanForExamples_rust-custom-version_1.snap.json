@@ -29,6 +29,7 @@
    }
   ],
   "startCommand": "./bin/rust-custom-version",
+  "user": "1000:1000",
   "variables": {
    "ROCKET_ADDRESS": "0.0.0.0"
   }

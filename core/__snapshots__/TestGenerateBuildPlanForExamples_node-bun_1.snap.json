@@ -51,6 +51,7 @@
    }
   ],
   "startCommand": "bun index.ts",
+  "user": "1000:1000",
   "variables": {
    "CI": "true",
    "NODE_ENV": "production",

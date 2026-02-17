@@ -22,7 +22,8 @@
     "step": "build"
    }
   ],
-  "startCommand": "deno run --allow-all main.ts"
+  "startCommand": "deno run --allow-all main.ts",
+  "user": "1000:1000"
  },
  "steps": [
   {

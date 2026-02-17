@@ -37,6 +37,7 @@
    }
   ],
   "startCommand": "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}",
+  "user": "1000:1000",
   "variables": {
    "PIP_DEFAULT_TIMEOUT": "100",
    "PIP_DISABLE_PIP_VERSION_CHECK": "1",

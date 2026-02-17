@@ -13,6 +13,8 @@ type BuildPlan struct {
 	Deploy  Deploy            `json:"deploy,omitempty"`
 }
 
+const DefaultUser = "1000:1000"
+
 type Deploy struct {
 	// The base layer for the deploy step
 	Base Layer `json:"base,omitempty"`
@@ -28,6 +30,9 @@ type Deploy struct {
 
 	// The paths to prepend to the $PATH environment variable
 	Paths []string `json:"paths,omitempty"`
+
+	// The user to run the container as (e.g. "1000:1000")
+	User string `json:"user,omitempty"`
 }
 
 func NewBuildPlan() *BuildPlan {

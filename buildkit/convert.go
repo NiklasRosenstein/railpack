@@ -58,6 +58,15 @@ func ConvertPlanToLLB(plan *p.BuildPlan, opts ConvertPlanOptions) (*llb.State, *
 	state := getStartState(*graphOutput.State)
 	imageEnv := getImageEnv(graphOutput, plan)
 
+	user := plan.Deploy.User
+	if user != "" {
+		state = state.
+			Run(llb.Shlex(fmt.Sprintf("chown -R %s %s", user, WorkingDir)),
+				llb.WithCustomName(fmt.Sprintf("[railpack] chown %s to %s", WorkingDir, user))).
+			Root().
+			User(user)
+	}
+
 	startCommand := plan.Deploy.StartCmd
 	if startCommand == "" {
 		startCommand = "/bin/bash"
@@ -75,6 +84,7 @@ func ConvertPlanToLLB(plan *p.BuildPlan, opts ConvertPlanOptions) (*llb.State, *
 		},
 		Variant: platform.Variant,
 		Config: specs.ImageConfig{
+			User:       user,
 			Env:        imageEnv,
 			WorkingDir: WorkingDir,
 			Entrypoint: []string{"/bin/bash", "-c"},

@@ -219,6 +219,10 @@ func GenerateConfigFromEnvironment(env *app.Environment) *c.Config {
 		config.Deploy.StartCmd = startCmdVar
 	}
 
+	if userVar, _ := env.GetConfigVariable("USER"); userVar != "" {
+		config.Deploy.User = userVar
+	}
+
 	if packages, _ := env.GetConfigVariableList("PACKAGES"); len(packages) > 0 {
 		config.Packages = utils.ParsePackageWithVersion(packages)
 	}

@@ -17,6 +17,7 @@
    }
   ],
   "startCommand": "echo hello",
+  "user": "1000:1000",
   "variables": {
    "HELLO": "world"
   }

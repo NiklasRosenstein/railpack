@@ -51,6 +51,7 @@
    }
   ],
   "startCommand": "python --version \u0026\u0026 neofetch $HELLO",
+  "user": "1000:1000",
   "variables": {
    "CI": "true",
    "NODE_ENV": "production",

@@ -21,7 +21,8 @@
     "step": "build"
    }
   ],
-  "startCommand": "zsh start.sh"
+  "startCommand": "zsh start.sh",
+  "user": "1000:1000"
  },
  "steps": [
   {

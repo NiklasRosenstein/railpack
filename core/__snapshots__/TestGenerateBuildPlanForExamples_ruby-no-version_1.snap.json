@@ -38,6 +38,7 @@
    }
   ],
   "startCommand": "bundle exec rackup config.ru -p ${PORT:-3000}",
+  "user": "1000:1000",
   "variables": {
    "BUNDLE_GEMFILE": "/app/Gemfile",
    "GEM_HOME": "/usr/local/bundle",

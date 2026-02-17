@@ -25,7 +25,8 @@
     "step": "build"
    }
   ],
-  "startCommand": "./out"
+  "startCommand": "./out",
+  "user": "1000:1000"
  },
  "steps": [
   {

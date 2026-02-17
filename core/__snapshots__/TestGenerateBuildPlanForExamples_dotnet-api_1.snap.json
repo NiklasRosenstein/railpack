@@ -28,6 +28,7 @@
    }
   ],
   "startCommand": "ASPNETCORE_URLS=http://0.0.0.0:${PORT:-3000} ./out/csharp-api",
+  "user": "1000:1000",
   "variables": {
    "ASPNETCORE_CONTENTROOT": "/app/out",
    "ASPNETCORE_ENVIRONMENT": "Production",

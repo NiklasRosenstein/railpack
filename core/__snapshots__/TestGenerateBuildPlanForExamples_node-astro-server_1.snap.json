@@ -55,6 +55,7 @@
    }
   ],
   "startCommand": "pnpm run start",
+  "user": "1000:1000",
   "variables": {
    "CI": "true",
    "HOST": "0.0.0.0",
